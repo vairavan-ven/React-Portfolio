@@ -9,11 +9,11 @@ const Navbar = ({ currentSection, handleNavigation }) => {
       {sections.map((section, index) => (
         <Link
           key={index}
-          to={`/${section.toLowerCase().replace(' ', '-')}`}
+          to={`/${section.toLowerCase().replace(/\s/g, '-')}`}
           className={currentSection === section ? 'active' : ''}
           onClick={() => handleNavigation(section)}
         >
-          {section}
+          {section.split(' ').join('\u00A0')} 
         </Link>
       ))}
     </nav>
