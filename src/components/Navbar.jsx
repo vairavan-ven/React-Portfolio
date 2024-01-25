@@ -1,23 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = ({ currentSection, handleNavigation }) => {
-  const sections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
+function Navbar() {
+  const currentPage = useLocation().pathname;
+
+  const sections = [
+    { path: '/', label: 'Home' },
+    { path: '/AboutMe', label: 'About Me' },
+    { path: '/Portfolio', label: 'Portfolio' },
+    { path: '/Contact', label: 'Contact' },
+  ];
 
   return (
-    <nav>
+    <ul className="nav nav-tabs">
       {sections.map((section, index) => (
-        <Link
-          key={index}
-          to={`/${section.toLowerCase().replace(/\s/g, '-')}`}
-          className={currentSection === section ? 'active' : ''}
-          onClick={() => handleNavigation(section)}
-        >
-          {section.split(' ').join('\u00A0')} 
-        </Link>
+        <li className="nav-item" key={index}>
+          <Link
+            to={section.path}
+            className={currentPage === section.path ? 'nav-link active' : 'nav-link'}
+          >
+            {section.label}
+          </Link>
+        </li>
       ))}
-    </nav>
+    </ul>
   );
-};
+}
 
 export default Navbar;
