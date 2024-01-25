@@ -1,12 +1,16 @@
-// Footer.jsx
 import React from 'react';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
-     
+      <p>
+        
+        <a href="https://github.com/vairavan-ven" >
+        Find me on GitHub: 
+        </a>
+      </p>
     </footer>
   );
-};
+}
 
 export default Footer;
