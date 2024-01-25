@@ -18,9 +18,9 @@ function Navbar() {
       </li>
       <li className="nav-item">
         <Link
-          to="/About"
+          to="/AboutMe"
           // Check if the current page is "About" and apply the appropriate class
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/AboutMe' ? 'nav-link active' : 'nav-link'}
         >
           About
         </Link>
