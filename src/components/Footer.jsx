@@ -6,7 +6,7 @@ function Footer() {
       <p>
         
         <a href="https://github.com/vairavan-ven" >
-        Find me on GitHub: 
+        Find me on GitHub 
         </a>
       </p>
     </footer>

@@ -8,7 +8,7 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
+    
   };
 
   return (

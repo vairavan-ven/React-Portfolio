@@ -4,27 +4,41 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+
+
+import Error from './components/Error'
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 import './index.css';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/AboutMe',
+        element: <AboutMe />,
+      },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/Contact',
+        element: <Contact />,
+      },
+    ],
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Header />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <RouterProvider router={router} />
 );
