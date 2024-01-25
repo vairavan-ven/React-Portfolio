@@ -11,29 +11,35 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="portfolio-item">
-        <img
-          src={weatherDashboardImage}
-          alt="Weather Dashboard"
-          style={{ width: '300px', height: 'auto' }}
-        />
+        <a href="https://vairavan-ven.github.io/weather-dashboard/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={weatherDashboardImage}
+            alt="Weather Dashboard"
+            style={{ width: '300px', height: 'auto' }}
+          />
+        </a>
         <p>Weather Dashboard</p>
       </div>
 
       <div className="portfolio-item">
-        <img
-          src={currencyExchangeImage}
-          alt="Currency Exchange"
-          style={{ width: '300px', height: 'auto' }}
-        />
+        <a href="https://amethystlyre.github.io/Currency-Exchange-project/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={currencyExchangeImage}
+            alt="Currency Exchange"
+            style={{ width: '300px', height: 'auto' }}
+          />
+        </a>
         <p>Currency Exchange</p>
       </div>
 
       <div className="portfolio-item">
-        <img
-          src={incomeExpenseImage}
-          alt="Income Expense Tracker"
-          style={{ width: '300px', height: 'auto' }}
-        />
+        <a href="https://github.com/dyl124/xinc-income-expense-tracker" target="_blank" rel="noopener noreferrer">
+          <img
+            src={incomeExpenseImage}
+            alt="Income Expense Tracker"
+            style={{ width: '300px', height: 'auto' }}
+          />
+        </a>
         <p>Income Expense Tracker</p>
       </div>
     </section>
