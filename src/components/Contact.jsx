@@ -1,5 +1,6 @@
 // Contact.jsx
 import React, { useState } from 'react';
+import '../styling/contact.css'
 
 const Contact = () => {
   const [name, setName] = useState('');
