@@ -1,5 +1,5 @@
-// Navbar.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ currentSection, handleNavigation }) => {
   const sections = ['About Me', 'Portfolio', 'Contact', 'Resume'];
@@ -7,14 +7,14 @@ const Navbar = ({ currentSection, handleNavigation }) => {
   return (
     <nav>
       {sections.map((section, index) => (
-        <a
+        <Link
           key={index}
-          href={`#${section.toLowerCase().replace(' ', '-')}`}
+          to={`/${section.toLowerCase().replace(' ', '-')}`}
           className={currentSection === section ? 'active' : ''}
           onClick={() => handleNavigation(section)}
         >
           {section}
-        </a>
+        </Link>
       ))}
     </nav>
   );
