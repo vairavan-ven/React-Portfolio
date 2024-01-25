@@ -16,7 +16,7 @@ Showcases some of my projects using react
 - [Questions](#questions)
 
 ## Installation
-access the link or cloone the repo
+access the link or clone the repo
 
 
 
