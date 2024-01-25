@@ -1,0 +1,21 @@
+/* styling/header.css */
+
+body {
+    margin: 0; /* Remove default margin to align content to the top */
+  }
+  
+  header {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (top) of the container */
+  }
+  
+  h1 {
+    margin: 0; /* Remove default margin for h1 */
+    font-size: 2em; /* Set font size */
+  }
+  

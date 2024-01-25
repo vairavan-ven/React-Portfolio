@@ -1,12 +1,11 @@
+// main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App';
-
-
-import Error from './components/Error'
+import Error from './components/Error';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -20,12 +19,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
-        //element: <Home />,
-      },
-      {
         path: '/AboutMe',
         element: <AboutMe />,
+        index: true, // Set index to true for the default page
       },
       {
         path: '/Portfolio',
