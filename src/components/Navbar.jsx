@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import githubPfp from '../assets/github-pfp.jpeg'; // Import the image
 
 // Function component for the navbar
 function Navbar() {
@@ -9,11 +8,10 @@ function Navbar() {
 
   return (
     <nav style={{ position: 'fixed', top: '0', left: '0', width: '100%', backgroundColor: '#ffffff', zIndex: '1000' }}>
-      <header style={{ display: 'flex', alignItems: 'center', padding: '10px 20px' }}>
-        <img src={githubPfp} alt="GitHub Profile" style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '10px' }} />
-        <h1 style={{ margin: '0' }}>Vairavan</h1>
-      </header>
-      <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }} className="nav nav-tabs">
+      <ul style={{ listStyleType: 'none', margin: '0', padding: '0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} className="nav nav-tabs">
+        <li style={{ display: 'inline-block' }} className="nav-item">
+          <h1 style={{ margin: '0' }}>Vairavan</h1>
+        </li>
         <li style={{ display: 'inline-block' }} className="nav-item">
           <Link
             to="/AboutMe"
