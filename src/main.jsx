@@ -8,6 +8,7 @@ import App from './App';
 import Error from './pages/Error';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 import './index.css';
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/Portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: '/Resume',
+        element: <Resume />,
       },
       {
         path: '/Contact',

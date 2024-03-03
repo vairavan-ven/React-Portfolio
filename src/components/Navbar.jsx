@@ -32,6 +32,15 @@ function Navbar() {
         </li>
         <li style={{ display: 'inline-block' }} className="nav-item">
           <Link
+            to="/Resume"
+            className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+            style={{ padding: '10px 20px', textDecoration: 'none', color: '#333333' }}
+          >
+            Resume
+          </Link>
+        </li>
+        <li style={{ display: 'inline-block' }} className="nav-item">
+          <Link
             to="/Contact"
             className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
             style={{ padding: '10px 20px', textDecoration: 'none', color: '#333333' }}
@@ -39,6 +48,7 @@ function Navbar() {
             Contact
           </Link>
         </li>
+        
       </ul>
     </nav>
   );
