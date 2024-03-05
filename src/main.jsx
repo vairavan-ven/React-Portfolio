@@ -1,4 +1,3 @@
-// main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -20,21 +19,20 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: '/AboutMe',
-        element: <AboutMe />,
-        index: true, // Set index to true for the default page
+        index: true,
+        element: <AboutMe />
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />,
+        path: '/contact',
+        element: <Contact />,
       },
       {
-        path: '/Resume',
+        path: '/resume',
         element: <Resume />,
       },
       {
-        path: '/Contact',
-        element: <Contact />,
+        path: '/portfolio',
+        element: <Portfolio />,
       },
     ],
   },
