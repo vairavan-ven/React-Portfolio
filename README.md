@@ -17,7 +17,7 @@ Showcases some of my projects using react
 - [Questions](#questions)
 
 ## Installation
-access the link: https://65e6c765a5966861b6a2279e--amazing-pasca-e0c1ff.netlify.app/ or clone the repo
+access the link: https://vairavan-portfolio.netlify.app/ or clone the repo
 
 
 
